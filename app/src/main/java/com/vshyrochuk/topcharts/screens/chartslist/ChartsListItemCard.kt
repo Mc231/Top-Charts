@@ -1,5 +1,6 @@
 package com.vshyrochuk.topcharts.screens.chartslist
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,8 +14,10 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.vshyrochuk.topcharts.R
 import com.vshyrochuk.topcharts.domain.model.ChartEntity
 
 @OptIn(ExperimentalMaterialApi::class)
@@ -33,6 +36,11 @@ fun ChartItemCard(entity: ChartEntity, onChartClick: (ChartEntity) -> Unit) {
             AsyncImage(
                 model = entity.getResizedImageThumbnail(),
                 contentDescription = entity.albumName,
+                modifier = Modifier.fillMaxSize()
+            )
+            Image(
+                painter = painterResource(id = R.drawable.fade_background),
+                contentDescription = null,
                 modifier = Modifier.fillMaxSize()
             )
             Column(
