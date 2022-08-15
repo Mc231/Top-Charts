@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TopCharts</string>
+    <string name="retry">Retry</string>
+    <plurals name="top_n_albums">
+        <item quantity="one">Top Album</item>
+        <item quantity="other">Top %d Albums</item>
+    </plurals>
+    <string name="visit_the_album">Visit The Album</string>
+    <string name="release_date_and_copyright">Released %1$s\n%2$s</string>
+    <string name="back">Back</string>
+    <string name="failed_to_load_charts">Failed to load charts</string>
+    <string name="failed_to_load_chart">Failed to load chart</string>
+    <string name="failed_to_load_chart_entity">Failed to load chart entity</string>
+    <string name="entity_id_not_passed">Entity id not passed</string>
+</resources>
